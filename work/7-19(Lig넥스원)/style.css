@@ -1,0 +1,180 @@
+html {
+  height: 100%;
+}
+.flex {
+  display: flex;
+}
+.align-c {
+  align-items: center;
+}
+.just-c {
+  justify-content: center;
+}
+img {
+  vertical-align: top;
+}
+body {
+  max-width: 1920px;
+  height: 100%;
+  overflow: hidden;
+  background-position: center;
+  background: url(./lignex1/skoreamapleft.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* header ================================ */
+header {
+  position: fixed;
+  left: 3%;
+  top: 1%;
+  font-size: 25px;
+}
+header p {
+  padding-left: 45px;
+  color: antiquewhite;
+}
+header p b {
+  color: rgb(207, 216, 255);
+  font-weight: normal;
+}
+header h1 img {
+  width: 300px;
+  height: 100px;
+}
+/* main ============================ */
+main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.main-content {
+  width: 700px;
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  z-index: 99;
+}
+ul.menu {
+  color: #fff;
+  gap: 35px;
+  margin-top: 8px;
+  position: relative;
+  z-index: 999;
+}
+ul.menu li:hover a {
+  background-color: rgb(0, 97, 0);
+  color: rgb(0, 0, 0);
+}
+ul.menu a {
+  display: block;
+  width: 120px;
+  text-align: center;
+  padding: 5px 20px;
+  border: 1px solid #fff;
+  border-radius: 99px;
+  font-size: 20px;
+}
+main .video {
+  position: relative;
+}
+main .video video {
+  width: 100%;
+  border: 5px solid rgb(255, 255, 255);
+}
+.main-visual {
+  position: absolute;
+  left: 65%;
+  top: 35%;
+  margin-left: 5%;
+  margin-top: 5%;
+  transition: 1s;
+}
+.main-visual.on {
+  transform: translateX(1000px);
+}
+.main-visual img {
+  width: 550px;
+}
+/* =============================== */
+#sect1 {
+  display: none;
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 5px solid #ffd0d0; */
+  z-index: 999;
+}
+#sect1 figure {
+  display: none;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+}
+#sect1 figure .air {
+  width: 100%;
+  height: 100%;
+  border: 11px solid #000;
+}
+#sect1 span {
+  display: block;
+  position: absolute;
+  background: rgb(0, 119, 255);
+}
+span.top {
+  width: 0%;
+  height: 5px;
+  left: 0;
+  top: 0;
+}
+span.right {
+  width: 5px;
+  height: 0%;
+  right: 0;
+  top: 0;
+}
+span.bottom {
+  width: 0%;
+  height: 5px;
+  right: 0;
+  bottom: 0;
+}
+span.left {
+  width: 5px;
+  height: 0%;
+  left: 0;
+  bottom: 0;
+}
+a.close {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+}
+a.close img {
+  width: 50px;
+  height: 50px;
+}
+/* ========================================================== */
+#sect2 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 0;
+  z-index: 999;
+  transform: translateY(-50%);
+  background: #000;
+  display: none;
+}
+.sect2-figure {
+  position: relative;
+}
+a.close2 img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 9999;
+  background: #01b81f;
+}

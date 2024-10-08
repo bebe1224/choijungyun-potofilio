@@ -1,0 +1,283 @@
+@charset "utf-8";
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* 색상 변수 */
+:root {
+  --main-color: #fa3232;
+  --sub-color: #faa8a8;
+}
+
+/* 공통 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Flex 설정 */
+.flex {
+  display: flex;
+}
+.fdc {
+  flex-direction: column;
+}
+.aic {
+  align-items: center;
+}
+.jcc {
+  justify-content: center;
+}
+.jcse {
+  justify-content: space-evenly;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.tac {
+  text-align: center;
+}
+/* wrpa============================== */
+.wrap {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+}
+/* section=========================== */
+.sect-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(./imgs/sect-1-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bts {
+  width: 800px;
+  height: 100%;
+  border: 1px solid #000;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.bts li {
+  width: 350px;
+  height: 350px;
+  margin: 5px auto;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: rgba(255, 255, 255, 0.4) 5px 5px,
+    rgba(255, 255, 255, 0.3) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px,
+    rgba(255, 255, 255, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  transform: skew(-3deg);
+}
+.bts li a img {
+  width: 109%;
+  height: 100%;
+  animation: float 3s ease-in-out infinite;
+}
+.bts li a :hover {
+  opacity: 0.6;
+  transition: 0.6s ease-in-out;
+}
+.bts li p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 83%;
+  left: 3%;
+}
+ul.bts li.on {
+  border: 7px solid #ffc400;
+}
+/* box ============================= */
+.box {
+  width: 600px;
+  height: 600px;
+  /* border: 1px solid #0e0e0e; */
+  perspective: 1200px;
+  margin: 0 auto;
+}
+/* cube========================== */
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-300px);
+  transition: 1s;
+}
+.cube.showDarkKnight {
+  transform: translateZ(-300px) rotateY(0deg);
+}
+/* front */
+.cube.showHero {
+  transform: translateZ(-300px) rotateY(-90deg);
+}
+/* right */
+.cube.showMihile {
+  transform: translateZ(-300px) rotateY(90deg);
+}
+/* left */
+.cube.showSoulMaster {
+  transform: translateZ(-300px) rotateY(-180deg);
+}
+/* back */
+.cube.showPaladin {
+  transform: translateZ(-300px) rotateX(-90deg);
+}
+/* top */
+.cube.showKaiser {
+  transform: translateZ(-300px) rotateX(90deg);
+}
+/* bottom */
+/* face========================================= */
+.face {
+  /* border: 1px solid #ff00ea; */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.face h2 {
+  border: 5px solid #000;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 80px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.face figure {
+  width: 100%;
+  height: calc(100% - 80px);
+  position: relative;
+}
+.face figure img {
+  width: 100%;
+  height: 100%;
+  animation: float 3s ease-in-out infinite;
+}
+
+.face figure figcaption {
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.face figure figcaption p {
+  width: 90%;
+  font-weight: 700;
+  font-size: 1.5vw;
+  color: white;
+  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+}
+.front {
+  background-image: url(./imgs/리인카.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotateY(0deg) translateZ(300px);
+}
+.back {
+  background-image: url(./imgs/에레브.jpg);
+  background-position: center;
+  background-size: 120% 116%;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg) translateZ(300px);
+}
+.right {
+  background-image: url(./imgs/헤네시스.webp);
+  background-position: center;
+  background-size: cover;
+
+  transform: rotateY(90deg) translateZ(300px);
+}
+.left {
+  background-image: url(./imgs/미하일\ 에레브.jpg);
+  background-position: center;
+  background-size: cover;
+
+  transform: rotateY(-90deg) translateZ(300px);
+}
+.top {
+  background-image: url(./imgs/페리온.webp);
+  background-position: center;
+  background-size: cover;
+
+  transform: rotateX(90deg) translateZ(300px);
+}
+.bottom {
+  background-image: url(./imgs/헬리시움.webp);
+  background-position: center;
+  background-size: cover;
+
+  transform: rotateX(-90deg) translateZ(300px);
+}
+
+/* 그라디에이션 ===================================== */
+.g-1 {
+  background: rgb(77, 0, 156);
+  background: linear-gradient(
+    90deg,
+    rgba(77, 0, 156, 1) 0%,
+    rgba(69, 60, 59, 1) 100%
+  );
+}
+.g-2 {
+  background: rgb(8, 224, 247);
+  background: linear-gradient(
+    90deg,
+    rgba(8, 224, 247, 1) 0%,
+    rgba(246, 189, 25, 1) 100%
+  );
+}
+.g-3 {
+  background: rgb(181, 141, 84);
+  background: linear-gradient(
+    45deg,
+    rgba(181, 141, 84, 1) 0%,
+    rgba(146, 35, 18, 1) 100%
+  );
+}
+.g-4 {
+  background: rgb(255, 241, 110);
+  background: linear-gradient(
+    315deg,
+    rgba(255, 241, 110, 1) 0%,
+    rgba(120, 45, 45, 1) 100%
+  );
+}
+.g-5 {
+  background: rgb(255, 241, 110);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 241, 110, 1) 0%,
+    rgba(52, 73, 123, 1) 100%
+  );
+}
+.g-6 {
+  background: rgb(70, 7, 11);
+  background: linear-gradient(
+    0deg,
+    rgba(70, 7, 11, 1) 0%,
+    rgba(252, 204, 153, 1) 100%
+  );
+}

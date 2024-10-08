@@ -1,0 +1,43 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+/* 행은 가로 Row
+열은 세로 Column */
+/* grid */
+.container {
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 100%;
+  height: 100vh;
+  gap: 10px;
+
+  /* 열값 =======================================*/
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(5,1fr); */
+  /* grid-template-columns: repeat(5,minmax(300px,1fr)); */
+  /* 은 5개의 열을 만들고, 각 열의 너비를 최소 300픽셀에서 최대 가용 공간까지 조절한다는 의미입니다.
+       1fr은 "fractional unit"의 약자로, 가용 공간을 균등하게 나누는 데 사용됩니다. */
+  /* grid-template-columns: repeat(5, 1fr); */
+  /* 행값====================================== */
+  /* grid-template-rows: 25%; */
+  /* grid-template-rows: repeat(2, 1fr); */
+  /* gap 주는방법 ==============================*/
+  /* column-gap: 12px; */
+  /* row-gap: 12px; */
+  /* gap: 12px; 둘다주고싶을때 */
+}
+
+.item {
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.item1 {
+  /* grid-column: 1/span 2;
+    grid-row: 1/span 2; */
+}

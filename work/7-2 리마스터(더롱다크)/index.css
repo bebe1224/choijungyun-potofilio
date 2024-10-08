@@ -1,0 +1,448 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn1 {
+  width: 300px;
+  background-color: #f44066;
+  font-size: 1.35em;
+  color: #fff;
+  padding: 20px 40px 20px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.btn1:hover {
+  opacity: 0.7;
+}
+
+.btn2 {
+  width: 300px;
+  background-color: #323037;
+  font-size: 1.35em;
+  color: #fff;
+  padding: 20px 40px 20px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.btn2:hover {
+  opacity: 0.7;
+}
+
+.sect1 {
+  height: 1080px;
+  background-image: url(./imgs/1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative;
+}
+.sect1 .h-menu {
+  display: none;
+}
+.sect1 .x {
+  display: none;
+}
+.sect1 nav {
+  display: flex;
+  justify-content: space-between;
+}
+.sect1 nav h1 {
+  font-size: 22px;
+  font-weight: lighter;
+}
+.sect1 nav h1 span {
+  font-weight: bold;
+}
+.sect1 nav ul {
+  gap: 30px;
+  display: flex;
+}
+.sect1 nav ul li a {
+  transition: 0.3s ease-in-out;
+}
+.sect1 nav ul li a:hover {
+  color: #f84545;
+}
+.sect1 h2 {
+  font-size: 50px;
+  padding: 300px 0px 0px 0px;
+  text-align: center;
+}
+.sect1 .sect1-text {
+  text-align: center;
+  padding: 40px 0px 0px 0px;
+  font-size: 30px;
+  color: #dbdbdb;
+}
+.sect1 .btn1 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sect2 {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.sect2 .one {
+  height: 363.64px;
+}
+.sect2 .one h2 {
+  font-size: 50px;
+}
+.sect2 .one .p1 {
+  color: #9e9e9e;
+  padding-top: 30px;
+  font-size: 30px;
+}
+.sect2 .two {
+  color: #9e9e9e;
+}
+.sect2 .two .p2 {
+  line-height: 30px;
+}
+.sect2 .two .p3 {
+  margin-top: 60px;
+  line-height: 30px;
+}
+
+.sect3 {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sect3 .h3pw {
+  text-align: center;
+}
+.sect3 .h3pw h3 {
+  font-size: 50px;
+}
+.sect3 .h3pw .s3t {
+  font-size: 30px;
+}
+.sect3 .fig-w {
+  padding: 60px 0px 60px 0px;
+  display: flex;
+  width: 1500px;
+  height: 600px;
+}
+.sect3 .fig-w figure {
+  width: 50%;
+  margin: 0px 25px 0px 25px;
+}
+.sect3 .fig-w figure img {
+  width: 100%;
+  height: 80%;
+}
+.sect3 .fig-w figure figcaption {
+  background-color: #fff;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.sect3 .btn-w {
+  display: flex;
+  gap: 50px;
+}
+
+.sect4 {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.sect4 .h4p {
+  margin: 0 auto;
+  padding-left: 30px;
+  width: 1500px;
+}
+.sect4 .h4p h4 {
+  font-size: 50px;
+}
+.sect4 .h4p p {
+  font-size: 30px;
+}
+.sect4 .fig-w {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sect4 .fig-w figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.sect4 .fig-w figure > :nth-child(1) {
+  text-align: right;
+}
+.sect4 .fig-w figure figcaption span {
+  font-size: 30px;
+  font-weight: 700;
+}
+.sect4 .fig-w figure figcaption p {
+  line-height: 30px;
+  display: inline-block;
+}
+.sect4 .fig-w figure figcaption > :nth-child(1) {
+  font-size: 20px;
+}
+.sect4 .fig-w figure figcaption > :nth-child(2) {
+  margin-top: 30px;
+}
+.sect4 .fig-w figure img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin: 30px;
+  border: 10px solid #eeeeee;
+}
+
+.sect5 {
+  background-image: url(./imgs/1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  color: #fff;
+}
+.sect5 h5 {
+  font-size: 50px;
+}
+.sect5 p {
+  font-size: 30px;
+}
+
+footer {
+  height: 450px;
+}
+footer .ft1 {
+  height: 350px;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+footer .ft1 li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .ft1 li img {
+  width: 70%;
+  height: 70%;
+}
+footer .ft2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+footer .ft2 a {
+  color: #f697ab;
+  transition: 0.3s ease-in-out;
+}
+footer .ft2 a:hover {
+  color: #f44066;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 500px) {
+  .sect1 {
+    position: relative;
+  }
+  .sect1 .h-menu {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .sect1 .h-menu.active {
+    display: none;
+  }
+  .sect1 .x {
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .sect1 .x.on {
+    display: block;
+  }
+  .sect1 .m-nav {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #222222;
+    z-index: 999;
+    transition: left 0.3s ease-in-out;
+  }
+  .sect1 .m-nav.active {
+    left: 0;
+  }
+  .sect1 .m-nav h1 {
+    display: none;
+  }
+  .sect1 .m-nav ul {
+    width: 90%;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    gap: 0px;
+  }
+  .sect1 .m-nav ul li {
+    border-bottom: 1px solid #ffffff;
+    text-align: left;
+    padding: 10px;
+  }
+  .sect1 .m-nav ul li a {
+    font-size: 25px;
+  }
+  .sect1 .sect1-text {
+    font-size: 25px;
+  }
+  .sect2 {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+  .sect2 .one {
+    width: 100%;
+    height: 25%;
+    padding: 15px;
+  }
+  .sect2 .one h2 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  .sect2 .one .p1 {
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 0;
+  }
+  .sect2 .two {
+    padding: 15px;
+    width: 100%;
+    height: calc(75% - 60px);
+  }
+  .sect2 .two .p2 {
+    margin: 0;
+    padding: 0;
+  }
+  .sect2 .two .p3 {
+    margin-top: 30px;
+    padding: 0;
+  }
+  .sect3 {
+    padding: 90px 0px 90px 0px;
+    height: auto;
+  }
+  .sect3 .h3pw {
+    margin-bottom: 50px;
+  }
+  .sect3 .h3pw h3 {
+    font-size: 25px;
+  }
+  .sect3 .h3pw .s3t {
+    font-size: 20px;
+  }
+  .sect3 .fig-w {
+    margin: 0;
+    padding: 0;
+    width: 430px;
+    height: 25%;
+    gap: 30px;
+  }
+  .sect3 .fig-w figure {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .sect3 .fig-w figure figcaption p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .sect3 .btn-w {
+    justify-content: center;
+    width: 250px;
+    padding: 0;
+    margin-top: 50px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .sect4 {
+    height: auto;
+    margin: 40px;
+  }
+  .sect4 .h4p {
+    padding: 0;
+    width: 100%;
+  }
+  .sect4 .h4p h4 {
+    font-size: 30px;
+  }
+  .sect4 .h4p p {
+    font-size: 20px;
+  }
+  .sect4 .fig-w {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .sect4 .fig-w figure {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .sect4 .fig-w figure figcaption p {
+    line-height: 24px;
+  }
+  .sect4 .fig-w figure img {
+    margin: 0px 30px 0px 30px;
+  }
+  .sect5 h5 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .sect5 p {
+    font-size: 20px;
+    color: #656565;
+  }
+}/*# sourceMappingURL=index.css.map */

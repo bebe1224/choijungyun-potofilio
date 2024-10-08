@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIG넥스원</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="/reset.css">
+<link rel="stylesheet" href="./style.css">
+
+<style>
+    .swiper {
+        width: 1700px;
+        height: 394px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: #000;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .swiper-pagination-bullet-active {
+        color: #fff;
+        background: #007aff;
+    }
+
+    .swiper-scrollbar-drag {
+        background: rgb(16, 105, 4);
+    }
+</style>
+
+<body>
+    <header>
+        <h1><img src="./lignex1/logo-removebg-preview.png" alt=""></h1>
+        <p>강력한 국방 <b>우리의미래</b></p>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="video">
+                <video src="./lignex1/kf-x홍보영상.mp4" loop autoplay muted></video>
+            </div>
+            <ul class="flex align-c just-c menu">
+                <li class="story"><a href="#">Story</a></li>
+                <li class="recipe"><a href="#">Future</a></li>
+            </ul>
+        </div>
+        <div class="main-visual">
+            <img src="./lignex1/kf21-removebg-preview.png" alt="">
+        </div>
+    </main>
+    <section id="sect1">
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        <figure>
+            <img class="air" src="./lignex1/다목적스텔스무인기.png" alt="">
+            <a href="#" class="close">
+                <img src="./lignex1/close.png" alt="">
+            </a>
+        </figure>
+    </section>
+    <section class="sect2" id="sect2">
+        <figure class="sect2-figure"> <a href="#" class="close2">
+                <img src="./lignex1/close.png" alt="">
+            </a></figure>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./lignex1/해상감시레이다-2.png" alt="해상감시레이다-2"></div>
+                <div class="swiper-slide"><img src="./lignex1/탑재중량40kg급하이브리드수송드론.png" alt="탑재중량40kg급하이브리드수송드론"></div>
+                <div class="swiper-slide"><img src="./lignex1/탑재중량200kg급 수소연료 수송드로kcd-200.png"
+                        alt="탑재중량200kg급 수소연료 수송드로kcd-200.png"></div>
+                <div class="swiper-slide"><img src="./lignex1/전자 광학위성 감시체계(eoss).png" alt="전자 광학위성 감시체계(eoss)"></div>
+                <div class="swiper-slide"><img src="./lignex1/무인수색차량 감시장치(EOTS).png" alt="무인수색차량 감시장치(EOTS)"></div>
+                <div class="swiper-slide"><img src="./lignex1/다목적무인헬기MPUH.png" alt="다목적무인헬기"></div>
+                <div class="swiper-slide"><img src="./lignex1/국지방공레이더.png" alt="국지방공레이더"></div>
+                <div class="swiper-slide"><img src="./lignex1/홍상어.png" alt="홍상어"></div>
+                <div class="swiper-slide"><img src="./lignex1/청상어.png" alt="청상어"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+</body>
+<script src="./jquery-3.7.1.js"></script>
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: false,
+        },
+    });
+</script>
+
+</html>

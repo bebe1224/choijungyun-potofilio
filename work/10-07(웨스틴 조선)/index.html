@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10/08</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+
+        /* 이건 scss 쓰니까 안먹어서 따로빼놓음 */
+        .p1 {
+            position: relative;
+            top: 50px;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+        }
+
+        h2 {
+            position: relative;
+            top: 50px;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+        }
+
+        .p2 {
+            position: relative;
+            top: 50px;
+            opacity: 0;
+            transition: 0.6s ease-in-out;
+        }
+
+        .btn-w {
+            position: relative;
+            top: 50px;
+            opacity: 0;
+            transition: 0.7s ease-in-out;
+        }
+
+        .sect1-bg1 {
+            position: relative;
+            top: 50px;
+            opacity: 0;
+            transition: 0.8s ease-in-out;
+        }
+
+        /* scss로 변환시 왼쪽에 써놓았음 이건 예제로 씀 */
+        /* section.on h2 {
+            opacity: 1;
+            top: 0;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <h1><img src="./imgs/로고.webp" alt=""></h1>
+            <nav class="m-nav">
+                <div class="x">
+                    <img src="./imgs/XX.png" alt="">
+                </div>
+                <ul>
+                    <li class="main-menu"><a href="#sect1">홈</a></li>
+                    <li class="main-menu"><a href="#sect2">음식</a></li>
+                    <li class="main-menu"><a href="#sect3">강당</a></li>
+                    <li class="main-menu"><a href="#sect4">예술</a></li>
+                    <li class="main-menu"><a href="#sect5">사랑</a></li>
+                    <li class="main-menu"><a href="#sect6">공간</a></li>
+                </ul>
+            </nav>
+            <img src="./imgs/menu.png" alt="" class="menu">
+        </div>
+    </header>
+    <section class="sect sect1" id="sect1">
+        <div class="wrap">
+            <div class="one">
+                <div class="title-w">
+                    <p class="p1">도심 속 오아시스</p>
+                    <h2>럭셔리와 편안함의<br>
+                        완벽한 조화</h2>
+                    <p class="p2">"비즈니스와 휴식을 위한 최적의 공간에서 특별한 경험을 만나보세요.<br>
+                        웨스틴 조선호텔 서울이 편안함과 세심한 서비스를 제공합니다."</p>
+                </div>
+                <div class="btn-w"><button>상세정보</button></div>
+            </div>
+            <div class="two">
+                <div class="sect1-bg1"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sect sect2" id="sect2">
+        <div class="wrap">
+            <div class="one">
+                <div class="sect1-bg1"></div>
+            </div>
+            <div class="two">
+                <div class="title-w">
+                    <p class="p1">도심 속 미식의 향연</p>
+                    <h2>정성과 창의성의<br>
+                        완벽한 조화</h2>
+                    <p class="p2">"비즈니스 미팅이나 특별한 순간을 위해 <br>
+                        최적의 공간에서 미식 경험을 만나보세요."</p>
+                </div>
+                <div class="btn-w"><button>상세정보</button></div>
+            </div>
+        </div>
+    </section>
+    <section class="sect sect3" id="sect3">
+        <div class="wrap">
+            <div class="one">
+                <div class="title-w">
+                    <p class="p1">도심 속 최적의 비즈니스 공간</p>
+                    <h2>세미나와 회의의<br>
+                        완벽한 조화</h2>
+                    <p class="p2">"세미나, 회의, 인터뷰를 위한 최적의 공간에서 특별한 경험을 만나보세요. <br>
+                        웨스틴 조선호텔 서울이 편안함과 세심한 서비스를 제공합니다."</p>
+                </div>
+                <div class="btn-w"><button>상세정보</button></div>
+            </div>
+            <div class="two">
+                <div class="sect1-bg1"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sect sect4" id="sect4">
+        <div class="wrap">
+            <div class="one">
+                <div class="sect1-bg1"></div>
+            </div>
+            <div class="two">
+                <div class="title-w">
+                    <p class="p1">도심 속 쇼핑의 즐거움</p>
+                    <h2>럭셔리와 편리함의 <br>
+                        완벽한 조화</h2>
+                    <p class="p2">"면세 쇼핑을 위한 최적의 공간에서 특별한 경험을 만나보세요. <br>
+                        웨스틴 조선호텔 서울이 품격 있는 상품과 세심한 서비스를 제공합니다."</p>
+                </div>
+                <div class="btn-w"><button>상세정보</button></div>
+            </div>
+        </div>
+    </section>
+    <section class="sect sect5" id="sect5">
+        <div class="wrap">
+            <div class="one">
+                <div class="title-w">
+                    <p class="p1">사랑을 위한 특별한 공간</p>
+                    <h2>사랑과 감동의<br>
+                        완벽한 조화</h2>
+                    <p class="p2">"사랑하는 사람을 위한 특별한 축하 서비스를 만나보세요. <br>
+                        웨스틴 조선호텔 서울이 세심한 배려와 함께 잊지 못할 순간을 만들어 드립니다."</p>
+                </div>
+                <div class="btn-w"><button>상세정보</button></div>
+            </div>
+            <div class="two">
+                <div class="sect1-bg1"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sect sect6" id="sect6">
+        <div class="wrap">
+            <div class="one">
+                <div class="sect1-bg1"></div>
+            </div>
+            <div class="two">
+                <div class="title-w">
+                    <p class="p1">도심 속 예술의 향연</p>
+                    <h2>정성과 창의성의<br>
+                        완벽한 조화</h2>
+                    <p class="p2">"비즈니스 미팅이나 특별한 순간을 위해 <br>
+                        웨스틴 조선호텔 서울에서 예술 작품과 함께 감동적인 경험을 만나보세요."</p>
+                </div>
+                <div class="btn-w"><button>상세정보</button></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="sect sect7">
+        <div class="wrap">
+            <div class="one">
+                <div class="title-w">
+                    <p class="p1">도심 속 예술의 향연</p>
+                    <h2>정성과 창의성의 완벽한 조화</h2>
+                    <p class="p2">"비즈니스 미팅이나 특별한 순간을 위해 <br>
+                        웨스틴 조선호텔 서울에서 예술 작품과 함께 감동적인 경험을 만나보세요."</p>
+                </div>
+            </div>
+            <div class="two">
+                <ul class="s7-menu">
+                    <li><a href="#">예제 텍스트1
+                            <span>숨겨진 글~~~~~~~~~~1</span>
+                        </a></li>
+                    <li><a href="#">예제 텍스트2
+                            <span>숨겨진 글~~~~~~~~~~2</span>
+                        </a></li>
+                    <li><a href="#">예제 텍스트3
+                            <span>숨겨진 글~~~~~~~~~~3</span>
+                        </a></li>
+                    <li><a href="#">예제 텍스트4
+                            <span>숨겨진 글~~~~~~~~~~4</span>
+                        </a></li>
+                </ul>
+                <div class="screen">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <section class="sect sect8">
+        <div class="wrap"></div>
+    </section> -->
+    <div class="banner"></div>
+    <!-- <footer></footer> -->
+    <script src="./script/jquery-3.7.1.js"></script>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
